@@ -1,8 +1,8 @@
-def decrescente(numero):
-    if numero == 0:
-         print(numero)
+def decrescente(num):
+    if num == 0:
+        print(0)
     else:
-        print(numero)
-        decrescente(numero-1)
+        print(num)
+        return decrescente(num-1)
     
-decrescente(10)
+decrescente(5)

@@ -1,5 +1,9 @@
 def inverter(palavra):
-    if len(palavra) <= 1:
-        return palavra
+    nova_palavra = ""
+    if palavra[0] == 0:
+        return palavra[0]
     else:
-        return palavra[-1] + inverter(palavra[:-1])
+        nova_palavra = palavra[-1]
+        return nova_palavra
+
+print("word")

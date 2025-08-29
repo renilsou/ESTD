@@ -1,7 +1,7 @@
-def fat(numero):
-    if numero == 0 or numero == 1:
+def fat(num):
+    if num == 0 or num == 1:
         return 1
     else:
-        return numero * fat(numero-1)
-
-print(fat(5))
+        return num * fat(num-1)
+    
+print(fat(0))

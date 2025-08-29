@@ -1,8 +1,8 @@
-def crescente(numero):
-    if numero == 0:
-        print(numero)
+def crescente(num):
+    if num == 0:
+        print(0)
     else:
-        crescente(numero-1)
-        print(numero)
-      
+        crescente(num-1)
+        return print(num)
+
 crescente(5)
