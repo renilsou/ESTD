@@ -8,9 +8,15 @@ os seus divisores próprios, isto é, a soma de
 todos os divisores excluindo o próprio número. 
 Pode, se assim o entender, definir funções auxiliares.
 '''
-
-def divisores(num):
-    if num == 0:
+def soma_divisores(num, div):
+    if div == 0:
         return 0
+    elif num % div == 0:
+        return div + soma_divisores(num, div-1)
     else:
-        return (num if num % num-1 == 0 else 0) + divisores(num-1)
+        return soma_divisores(num, div-1)
+
+def num_perf(num):
+    return num == soma_divisores(num, num-1)
+
+print(num_perf(5))
